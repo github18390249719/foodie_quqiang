@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.Login_RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/login_register_top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@color/gray">
+
+        <TextView
+            android:id="@+id/login_register_top_return_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="返回"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="登录/注册"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_register_menu_ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/login_register_top_ll">
+
+        <TextView
+            android:id="@+id/login_register_login_tv"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_register_textview_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@drawable/login_register_textview_color" />
+
+        <TextView
+            android:id="@+id/login_register_register_tv"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_register_textview_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@drawable/login_register_textview_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_register_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_register_menu_ll"
+        android:background="@color/whitesmoke">
+
+    <ImageView
+        android:id="@+id/login_register_content_cursor_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:scaleType="matrix"
+        android:src="@mipmap/line_1"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/login_register_content_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/login_register_content_ll">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

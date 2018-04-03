@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <LinearLayout
+                    android:id="@+id/homepage_position_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/homepage_position_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@mipmap/u46"
+                        android:drawableTint="#3F2B36"
+
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="请选择地区"
+                        android:textColor="#3F2B36"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/homepage_food_search_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/homepage_position_ll"
+                    android:clickable="true"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/homepage_food_search_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@mipmap/u218"
+                        android:drawableTint="#999999"
+                        android:gravity="center_vertical"
+                        android:text=" 搜索:"
+                        android:textSize="13sp"
+                        android:transitionName="shareTexView" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/homepage_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/homepage_cursor_bg"
+                    android:gravity="center">
+
+                    <LinearLayout style="@style/homepage_vp_cursor_ll">
+
+                        <View
+                            android:id="@+id/homepage_vp_dot1_v"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/dot_focused" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/homepage_vp_cursor_ll">
+
+                        <View
+                            android:id="@+id/homepage_vp_dot2_v"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/dot_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/homepage_vp_cursor_ll">
+
+                        <View
+                            android:id="@+id/homepage_vp_dot3_v"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/dot_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/homepage_vp_cursor_ll">
+
+                        <View
+                            android:id="@+id/homepage_vp_dot4_v"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/dot_normal" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/homepage_menu1_ll"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <LinearLayout style="@style/homepage_menu_ll_style">
+
+                    <ImageView
+                        style="@style/homepage_menu_iv_style"
+                        android:src="@mipmap/u101" />
+
+                    <TextView
+                        style="@style/homepage_menu_tv_style"
+                        android:text="川菜" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/homepage_menu_ll_style">
+
+                    <ImageView
+                        style="@style/homepage_menu_iv_style"
+                        android:src="@mipmap/u102"
+
+                        />
+
+                    <TextView
+                        style="@style/homepage_menu_tv_style"
+                        android:text="湘菜" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/homepage_menu_ll_style">
+
+                    <ImageView
+                        style="@style/homepage_menu_iv_style"
+                        android:src="@mipmap/u103" />
+
+                    <TextView
+                        style="@style/homepage_menu_tv_style"
+                        android:text="火锅" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/homepage_menu_ll_style">
+
+                    <ImageView
+                        style="@style/homepage_menu_iv_style"
+                        android:src="@mipmap/u104" />
+
+                    <TextView
+                        style="@style/homepage_menu_tv_style"
+                        android:text="快餐" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <LinearLayout
+                android:id="@+id/homepage_menu2_ll"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <LinearLayout style="@style/homepage_menu_ll_style">
+
+                    <ImageView
+                        style="@style/homepage_menu_iv_style"
+                        android:src="@mipmap/u105" />
+
+                    <TextView
+                        style="@style/homepage_menu_tv_style"
+                        android:text="夜宵" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/homepage_menu_ll_style">
+
+                    <ImageView
+                        style="@style/homepage_menu_iv_style"
+                        android:src="@mipmap/u106" />
+
+                    <TextView
+                        style="@style/homepage_menu_tv_style"
+                        android:text="粥粉" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/homepage_menu_ll_style">
+
+                    <ImageView
+                        style="@style/homepage_menu_iv_style"
+                        android:src="@mipmap/u107" />
+
+                    <TextView
+                        style="@style/homepage_menu_tv_style"
+                        android:text="奶茶" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/homepage_menu_ll_style">
+
+                    <ImageView
+                        style="@style/homepage_menu_iv_style"
+                        android:src="@mipmap/u108" />
+
+                    <TextView
+                        style="@style/homepage_menu_tv_style"
+                        android:text="甜品" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#572A3F" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="每日榜单"
+                android:textColor="#3F2B36"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/homepage_frl_rl"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/view2"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginStart="13dp"
+                        android:text="美食榜"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/view2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="今日推荐：巧克力蛋糕、韩式拌饭..."
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="230dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginTop="3dp"
+                        android:background="#ffffff">
+
+                    </View>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignStart="@+id/view2"
+                        android:layout_below="@+id/view2"
+                        android:text="每日美食推荐看这里！"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape1">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/view2"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginStart="13dp"
+                        android:text="商家榜"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/view2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:text="今日推荐：肉多多、秘制菜馆..."
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="230dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginTop="3dp"
+                        android:background="#ffffff">
+
+                    </View>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignStart="@+id/view2"
+                        android:layout_below="@+id/view2"
+                        android:text="火爆美食都在这些商家！"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#572A3F" />
+
+            <TextView
+                style="@style/homepage_recommend_class_tv_style"
+                android:text="美食推荐" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/food_ranking_list_comprehensive_ranking_pic_iv"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/u47" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_title_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:background="#B481BB"
+                                android:text="巧克力蛋糕"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_iv"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="56dp"
+                                android:src="@mipmap/goodicon_u291" />
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_sum_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="30dp"
+                                android:text="512"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#5E3D50">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_introduce_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="巧克力是女人永远的甜品，黑巧克力的微苦，白巧克力的绵甜，而巧克力蛋糕它绝对是下午茶的好搭档。"
+                            android:textColor="#72636E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#5E3D50">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/food_ranking_list_comprehensive_ranking_pic_iv"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/u18" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_title_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:background="#B481BB"
+                                android:text="韩式拌饭"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_iv"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="56dp"
+                                android:src="@mipmap/goodicon_u291" />
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_sum_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="30dp"
+                                android:text="512"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#5E3D50">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_introduce_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="韩式拌饭又称石锅拌饭，朝鲜菜，咸鲜味，营养丰富且热量不高。，黑巧克力的微苦，白巧克力的绵甜，而巧克力蛋糕它绝对是下午茶的好搭档。"
+                            android:textColor="#72636E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#5E3D50">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/food_ranking_list_comprehensive_ranking_pic_iv"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/u20" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_title_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:background="#B481BB"
+                                android:text="蜜汁烤鸭"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_iv"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="56dp"
+                                android:src="@mipmap/goodicon_u291" />
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_sum_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="30dp"
+                                android:text="512"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#5E3D50">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_introduce_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="烤鸭历史悠久，起源于中国南北朝时期，当时《食珍录》中已记有炙鸭。"
+                            android:textColor="#72636E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#5E3D50">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/food_ranking_list_comprehensive_ranking_pic_iv"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/u21" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_title_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:background="#B481BB"
+                                android:text="荷香鸡饭"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_iv"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="56dp"
+                                android:src="@mipmap/goodicon_u291" />
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_sum_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="30dp"
+                                android:text="512"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#5E3D50">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_introduce_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="荷香鸡粒饭,荤素相辅、滋补益人的食谱。"
+                            android:textColor="#72636E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#5E3D50">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/food_ranking_list_comprehensive_ranking_pic_iv"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/u19" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_title_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:background="#B481BB"
+                                android:text="红烧狮子头"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_iv"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="56dp"
+                                android:src="@mipmap/goodicon_u291" />
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_sum_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="30dp"
+                                android:text="512"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#5E3D50">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_introduce_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="红烧狮子头，也称四喜丸子，是一道营养美味，口感十足，是家庭聚会的常见菜。"
+                            android:textColor="#72636E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#5E3D50">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/food_ranking_list_comprehensive_ranking_pic_iv"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/u22" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_title_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:background="#B481BB"
+                                android:text="特色煎饺"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_iv"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="56dp"
+                                android:src="@mipmap/goodicon_u291" />
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_sum_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="30dp"
+                                android:text="512"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#5E3D50">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_introduce_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="煎饺是北方家常食品，主要食材是面粉和肉馅，制作成水饺之后用油煎制而成。"
+                            android:textColor="#72636E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#5E3D50">
+
+            </View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#572A3F" />
+
+
+            <TextView
+                style="@style/homepage_recommend_class_tv_style"
+                android:text="商家推荐" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/food_ranking_list_comprehensive_ranking_pic_iv"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/u22" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_title_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:background="#B481BB"
+                                android:text="特色煎饺"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_iv"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="56dp"
+                                android:src="@mipmap/goodicon_u291" />
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_sum_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="30dp"
+                                android:text="512"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#5E3D50">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_introduce_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="煎饺是北方家常食品，主要食材是面粉和肉馅，制作成水饺之后用油煎制而成。"
+                            android:textColor="#72636E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#5E3D50">
+
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/food_ranking_list_comprehensive_ranking_pic_iv"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/u22" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_title_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:background="#B481BB"
+                                android:text="特色煎饺"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+
+                            <ImageButton
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_iv"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="56dp"
+                                android:src="@mipmap/goodicon_u291" />
+
+                            <TextView
+                                android:id="@+id/food_ranking_list_comprehensive_ranking_support_sum_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="30dp"
+                                android:text="512"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#5E3D50">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_introduce_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="煎饺是北方家常食品，主要食材是面粉和肉馅，制作成水饺之后用油煎制而成。"
+                            android:textColor="#72636E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#5E3D50">
+
+            </View>
+            <LinearLayout
+                android:id="@+id/homepage_store_recommend_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

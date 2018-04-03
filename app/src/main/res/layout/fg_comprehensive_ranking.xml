@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                android:id="@+id/food_ranking_list_comprehensive_ranking_pic_iv"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/u47" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#B481BB"
+                            android:text="巧克力蛋糕"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_support_iv"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="56dp"
+                            android:src="@mipmap/goodicon_u291" />
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_support_sum_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="30dp"
+                            android:text="512"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#5E3D50">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/food_ranking_list_comprehensive_ranking_introduce_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#72636E"
+                        android:text="巧克力是女人永远的甜品，黑巧克力的微苦，白巧克力的绵甜，而巧克力蛋糕它绝对是下午茶的好搭档。"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#5E3D50">
+
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                android:id="@+id/food_ranking_list_comprehensive_ranking_pic_iv"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/u47" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="17dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#B481BB"
+                            android:text="巧克力蛋糕"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_support_iv"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="56dp"
+                            android:src="@mipmap/goodicon_u291" />
+
+                        <TextView
+                            android:id="@+id/food_ranking_list_comprehensive_ranking_support_sum_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="30dp"
+                            android:text="512"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#5E3D50">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/food_ranking_list_comprehensive_ranking_introduce_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#72636E"
+                        android:text="巧克力是女人永远的甜品，黑巧克力的微苦，白巧克力的绵甜，而巧克力蛋糕它绝对是下午茶的好搭档。"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#5E3D50">
+
+        </View>
+    </LinearLayout>
+</LinearLayout>

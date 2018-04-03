@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.FoodSearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape">
+
+        <ImageView
+            android:id="@+id/foodSearchReturnIV"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="11dp"
+            android:src="@mipmap/u209" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#592C63"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#E4E4E4">
+
+        <EditText
+            android:id="@+id/foodSearchInputTV"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:hint="请输入关键字搜索"
+            android:textSize="13dp"
+            android:textColorHint="#6F3381">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/foodSearchStartTV"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/foodSearchInputTV"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/foodSearchInputTV"
+            android:background="#ffffff"
+            android:drawableLeft="@mipmap/u218"
+            android:drawableTint="#6F3381"
+            android:gravity="center_vertical"
+            android:text="搜索"
+            android:textSize="13dp"
+            android:textColor="#6F3381" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        style="@style/food_search_content_class_tv_style"
+        android:text="历史记录" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="牛排"
+                style="@style/food_search_item_style" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="咖啡"
+                style="@style/food_search_item_style" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="蛋糕"
+                style="@style/food_search_item_style" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="火锅"
+                style="@style/food_search_item_style" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="酸辣粉"
+                style="@style/food_search_item_style" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        style="@style/food_search_content_class_tv_style"
+        android:text="热门搜索" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="牛排"
+                style="@style/food_search_item_style" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="咖啡"
+                style="@style/food_search_item_style" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="蛋糕"
+                style="@style/food_search_item_style" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="火锅"
+                style="@style/food_search_item_style" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="酸辣粉"
+                style="@style/food_search_item_style" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

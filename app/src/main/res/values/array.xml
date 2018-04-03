@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="address">
+        <item>后街</item>
+        <item>北门</item>
+        <item>堕落街</item>
+    </string-array>
+</resources>

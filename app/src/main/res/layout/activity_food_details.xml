@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.FooddetailsActivity">
+    <!--De-->
+    <!--美食详情界面头部菜单栏布局-->
+    <RelativeLayout
+        android:id="@+id/food_details_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#99ffcc">
+
+        <!--美食详情界面头部菜单栏返回控件-->
+        <Button
+            android:id="@+id/food_details_menu_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="返回" />
+
+        <!--美食详情界面头部菜单栏标题控件-->
+        <TextView
+            android:id="@+id/food_details_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="美食详情" />
+
+        <!--美食详情界面头部菜单栏收藏控件-->
+        <Button
+            android:id="@+id/food_details_menu_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="收藏" />
+
+    </RelativeLayout>
+
+    <!--美食详情界面内容滑动布局-->
+    <ScrollView
+        android:id="@+id/food_details_content_sv"
+        android:layout_width="match_parent"
+        android:layout_height="420dp">
+
+        <!--美食详情界面内容滑动布局——内容线性布局-->
+        <LinearLayout
+            android:id="@+id/food_details_content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--美食详情界面内容滑动布局——内容线性布局——轮播帧布局-->
+
+            <ViewFlipper
+                android:id="@+id/food_detail_content_vf"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#D1EEEE">
+
+            </ViewFlipper>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp">
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/ic_launcher_round" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/r123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="昵称" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="13dp"
+                                android:text="2017/12/13 15:00" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#D02090" />
+
+            <!--美食详情界面内容布局——美食名称控件-->
+            <TextView
+                android:id="@+id/food_details_foodname_tv"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#CDC9C9"
+                android:gravity="fill_vertical"
+                android:text="冰临城夏" />
+
+
+            <!--美食详情界面内容布局——营业时间、地址和定位 线性布局-->
+            <LinearLayout
+                android:id="@+id/food_details_food_time_and_address_and_location_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="#D1EEEE">
+
+                <!--美食详情界面内容布局——营业时间和地址 线性布局-->
+                <LinearLayout
+                    android:id="@+id/food_details_food_time_and_address_ll"
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+
+                    <!--美食详情界面内容布局——营业时间 控件-->
+                    <TextView
+                        android:id="@+id/food_details_food_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="营业时间：8:00-22:00" />
+
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="5dp"
+                        android:background="#D4D4D4" />
+
+                    <!--美食详情界面内容布局——地址 控件-->
+                    <TextView
+                        android:id="@+id/food_details_food_address_tv"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="地址：湖南省湘潭市雨湖区湖南科技大学北校区后街街景奶茶店" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/ic_launcher_round" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_main_fg_div1"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#D4D4D4" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="简介：" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="冰临城夏在科大后街已经发展了5年，一直获得同学们的好评，而且还有望会在北门等其他地方建立分店。" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#D4D4D4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户评论" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp">
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/ic_launcher_round" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/r123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="昵称" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="13dp"
+                                android:text="2017/12/13 15:00" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp">
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/ic_launcher_round" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/r123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="昵称" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="13dp"
+                                android:text="2017/12/13 15:00" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp">
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/ic_launcher_round" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/r123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="昵称" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="13dp"
+                                android:text="2017/12/13 15:00" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D8BFD8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/r132"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的评论...." />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/r132"
+                android:text="评论" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
