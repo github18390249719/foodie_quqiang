@@ -1,5 +1,6 @@
 package com.example.myapplication.Fragment;
 
+import android.app.ActivityOptions;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.ProgressDialog;
@@ -20,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.Login_RegisterActivity;
+import com.example.myapplication.MineCommentsActivity;
 import com.example.myapplication.R;
 
 import static android.app.Activity.RESULT_OK;
@@ -113,6 +115,7 @@ public class Fragment_mine extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
+        Intent intentIsLogin;
         if (isLogin) {
             switch (view.getId()) {
                 case R.id.mine_my_collection_tv:     //“我的收藏”功能实现
@@ -120,6 +123,9 @@ public class Fragment_mine extends Fragment implements View.OnClickListener {
                     break;
                 case R.id.mine_my_comment:     //“我的评论”功能实现
                     Toast.makeText(getActivity().getApplicationContext(), "我的评论", Toast.LENGTH_SHORT).show();
+                    intentIsLogin = new Intent(getActivity(), MineCommentsActivity.class);
+                    getActivity().startActivity(intentIsLogin, ActivityOptions.makeSceneTransitionAnimation(getActivity()).toBundle());
+                    Toast.makeText(getActivity().getApplicationContext(), "我的评论2", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.mine_my_food_album_tv:     //“美食相册”功能实现
                     Toast.makeText(getActivity().getApplicationContext(), "美食相册", Toast.LENGTH_SHORT).show();

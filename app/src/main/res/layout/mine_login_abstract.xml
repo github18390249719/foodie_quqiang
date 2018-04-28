@@ -6,60 +6,54 @@
     android:clickable="false"
     android:gravity="center_vertical">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_weight="1"
-        android:gravity="center">
 
-        <ImageView
-            android:id="@+id/mine_login_iv"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/photo" />
+    <ImageView
+        android:id="@+id/mine_login_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@mipmap/u991" />
 
-    </LinearLayout>
 
     <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_weight="3">
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
 
         <LinearLayout
             android:id="@+id/mine_login_nickname_ll"
             android:layout_width="match_parent"
-            android:layout_height="30dp">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/mine_login_nickname_tv"
                 android:layout_width="0dp"
-                android:layout_height="30dp"
+                android:layout_height="20dp"
                 android:layout_weight="4"
                 android:gravity="center_vertical"
-                android:textSize="18sp" />
+                android:text="屈小强"
+                android:textColor="#592C63"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="35dp"
+
+            <ImageView
+                android:id="@+id/mine_login_setting_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/mine_login_nickname_tv"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:src="@mipmap/setting"
+                android:tint="#592C63" />
 
-                <ImageView
-                    android:id="@+id/mine_login_setting_iv"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_toRightOf="@id/mine_login_nickname_tv"
-                    android:src="@mipmap/setting" />
-
-            </LinearLayout>
 
         </LinearLayout>
 
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_below="@id/mine_login_nickname_ll"
+            android:background="#33CCCCCC"
             android:text="个性签名"
             android:textColor="@color/silver" />
 

@@ -63,7 +63,7 @@ public class Fragment_login extends Fragment implements View.OnClickListener{
 
 
     protected void login(String str1,String str2){         //登录功能实现代码
-        if(str1.equals("jiangxing")){
+        if(str1.equals("123456")){
             if(str2.equals("123456")){
                 editor.putString("user",str1);
                 if(isAutologin){

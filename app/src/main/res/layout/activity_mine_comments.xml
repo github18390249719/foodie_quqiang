@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/u1070">
+
+            <ImageView
+                android:id="@+id/mineCommentsReturnIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/u1074" />
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="35dp"
+                android:layout_marginStart="80dp">
+
+                <ImageView
+                    android:id="@+id/mineCommentsHeadPortraitIV"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_head_portrait" />
+
+                <TextView
+                    android:id="@+id/mineCommentsNicknameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="60dp"
+                    android:text="屈小强"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mineCommentsCollectNumTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="25dp"
+                    android:text="收藏  242"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@mipmap/u1078" />
+
+                <TextView
+                    android:id="@+id/mineCommentsConcernNumTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="25dp"
+                    android:text="关注  342"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mineCommentsCommentsNumTV"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#33B481BB"
+            android:gravity="center"
+            android:text="183评论"
+            android:textColor="#B481BB" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B481BB" />
+
+
+        <ListView
+            android:id="@+id/mineCommentsLV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

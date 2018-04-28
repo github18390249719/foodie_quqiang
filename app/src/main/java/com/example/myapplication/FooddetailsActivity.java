@@ -14,7 +14,7 @@ public class FooddetailsActivity extends AppCompatActivity implements View.OnCli
     private Button food_details_menu_return;    //定义美食详情界面——菜单——返回Button控件
     private Button food_details_menu_collect;   //定义美食详情界面——菜单——收藏Button控件
     private ViewFlipper food_details_content_vf;
-    private int[] food_dzetails_content_vf_resId = {R.drawable.food1, R.drawable.food2, R.drawable.food3, R.drawable.food4};
+    private int[] food_dzetails_content_vf_resId = {R.mipmap.food1, R.mipmap.food2, R.mipmap.food3, R.mipmap.food4};
     private float startX;
 
     @Override

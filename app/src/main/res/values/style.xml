@@ -85,14 +85,15 @@
         <item name="android:background">@null</item>
     </style>
     <style name="setting_textView">
+        <item name="android:drawableRight">@mipmap/u917</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:background">#33CCCCCC</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">40dp</item>
         <item name="android:paddingLeft">10dp</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:drawablePadding">5dp</item>
         <item name="android:gravity">center_vertical|left</item>
         <item name="android:clickable">true</item>
-        <item name="android:background">@drawable/mine_click_bg</item>
     </style>
     <style name="homepage_menu_ll_style">
         <item name="android:layout_width">0dp</item>

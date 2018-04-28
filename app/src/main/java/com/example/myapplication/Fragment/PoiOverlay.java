@@ -30,16 +30,16 @@ public class PoiOverlay {
 	private Context context;
 	private Resources resources;
 
-	private int[] markers = {R.drawable.poi_marker_1,
-			R.drawable.poi_marker_2,
-			R.drawable.poi_marker_3,
-			R.drawable.poi_marker_4,
-			R.drawable.poi_marker_5,
-			R.drawable.poi_marker_6,
-			R.drawable.poi_marker_7,
-			R.drawable.poi_marker_8,
-			R.drawable.poi_marker_9,
-			R.drawable.poi_marker_10
+	private int[] markers = {R.mipmap.poi_marker_1,
+			R.mipmap.poi_marker_2,
+			R.mipmap.poi_marker_3,
+			R.mipmap.poi_marker_4,
+			R.mipmap.poi_marker_5,
+			R.mipmap.poi_marker_6,
+			R.mipmap.poi_marker_7,
+			R.mipmap.poi_marker_8,
+			R.mipmap.poi_marker_9,
+			R.mipmap.poi_marker_10
 	};
 	/**
 	 * 通过此构造函数创建Poi图层。
@@ -131,7 +131,7 @@ public class PoiOverlay {
 			return icon;
 		}else {
 			BitmapDescriptor icon = BitmapDescriptorFactory.fromBitmap(
-					BitmapFactory.decodeResource(resources, R.drawable.marker_other_highlight));
+					BitmapFactory.decodeResource(resources, R.mipmap.marker_other_highlight));
 			return icon;
 		}
 	}

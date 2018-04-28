@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
 
     <!-- 高德地图权限配置 -->
@@ -28,7 +29,8 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <!-- 更改设置 -->
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
     <!-- 3.2.0版本增加 -->
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <!-- 3.2.0版本增加 -->
@@ -52,6 +54,7 @@
         <activity android:name=".Food_ranking_listActivity" />
         <activity android:name=".FoodListActivity" />
         <activity android:name=".FoodContentActivity" />
+        <activity android:name=".MineCommentsActivity"/>
         <activity
             android:name=".LocationActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
